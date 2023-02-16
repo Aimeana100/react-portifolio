@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkreact_portifolio=self.webpackChunkreact_portifolio||[]).push([[473],{473:function(e,r,t){t.r(r);t(791);var i=t(184);r.default=function(){return(0,i.jsx)("div",{children:"Blogs Page"})}}}]);
-//# sourceMappingURL=473.771adeb2.chunk.js.map
