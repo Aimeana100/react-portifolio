@@ -1,0 +1,233 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Public Sans", sans-serif;
+}
+
+:root {
+  --bg_color: #2d4556;
+  --green: #2bfa19;
+  --dim__red: #8f7979;
+  --red_color: rgba(192, 112, 112, 1);
+  --white: #ffffff;
+  --red_green_gradient: linear-gradient(
+    99.25deg,
+    #c07070 3.51%,
+    rgba(107, 125, 137, 0.21) 98.47%
+  );
+}
+
+body {
+  background-color: var(--bg_color);
+}
+body > *{
+    margin: 0px auto;
+}
+
+
+header,
+nav,
+nav ul,
+nav ul li {
+  background-color: gradient;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1300px;
+  margin: auto;
+  justify-self: center;
+  padding: 0px 20px;
+}
+
+.breadcumb {
+  background: url("assets/images/breadcumb_bg2.jpg"), var(--bg_color);
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.breadcumb h1 {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: var(--white);
+}
+
+header.scrolled {
+  position: sticky;
+  top: 0px;
+  background-color: var(--bg_color);
+  box-shadow: 3px 1px 3px 0.1px #1c3f58;
+  z-index: 100;
+}
+
+.navigation__bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  position: relative;
+}
+.navigation__bar .navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.navigation__bar .navbar .nav__link {
+  padding: 10px;
+  color: var(--white);
+  font-weight: 500;
+  font-size: 20;
+}
+
+.navigation__bar .navbar .nav__link:hover,
+.navigation__bar .navbar .nav__link.active {
+  border-bottom: #2bfa19 1px solid;
+  color: rgba(125, 188, 73, 0.768);
+}
+
+
+
+/*  for a logged in user */
+.navigation__bar .user__logged{
+  display: flex;
+}
+.navigation__bar .user__logged span{
+  color: #2DFA17;
+}
+.navigation__bar .user__logged a {
+  background-color: #8f9fac;
+  border-radius: 3px;
+  padding: 2px;
+  transition: all 0.5s ease-in-out;
+}
+.navigation__bar .user__logged a:hover{
+  background-color: #27323B;
+  color: white;
+}
+
+.navigation__bar .call__to__action a {
+  background: var(--red_green_gradient);
+  color: var(--white);
+  border-radius: 30px;
+  padding: 10px;
+}
+
+li.call__to__action a {
+  /* background: transparent; */
+  background-color: #b4aeae7a;
+}
+li.call__to__action {
+  display: none;
+}
+li.call__to__action a:hover {
+  color: black;
+}
+.menu__toogle,
+#desktop-nav-toggle {
+  display: none;
+}
+
+.menu__toogle .nav__toogler {
+  cursor: pointer;
+}
+
+
+// Section Heading
+
+
+.heading {
+  text-align: center;
+  margin: 20px auto;
+
+  h2 {
+    color: var(--green);
+    position: relative;
+    width: fit-content;
+    margin: auto;
+  }
+  
+   h2::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: calc(100% + 2px);
+    background-color: #2bfa19;
+  }
+
+  h2::after {
+    content: "";
+    position: absolute;
+    top: calc(110%);
+    left: 50%;
+    transform: translate(-50%);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid var(--green);
+    /* margin: 2rem; */
+  }
+}
+
+
+/*------------------responsive ipad  Navigation -------------------------*/
+
+@media only screen and (max-width: 834px) {
+  .menu__toogle {
+    display: flex;
+  }
+
+  .navigation__bar div.call__to__action a {
+    float: right;
+    justify-self: flex-end;
+    justify-self: end;
+    background: var(--bg_color);
+    color: rgba(255, 255, 255, 0.74);
+    border-bottom: 0.1em solid black;
+    display: none;
+  }
+
+  li.call__to__action {
+    display: block;
+  }
+
+  .navigation__bar  {
+    position: absolute;
+    flex-direction: column;
+    z-index: 30;
+    width: calc(100% - 46px);
+    top: 60px;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: var(--white);
+
+    background-color: #8f7979;
+    display: none;
+  }
+
+  .navigation__bar .navbar .nav__link {
+    position: relative;
+  }
+
+  .navigation__bar .navbar a {
+    padding: 10px;
+    display: block;
+    /* color: var(--bg_color); */
+  }
+}
+
+
+
