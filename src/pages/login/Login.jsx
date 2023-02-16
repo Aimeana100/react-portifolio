@@ -44,7 +44,7 @@ const Login = () => {
 
             <div className="action__message form__row">
               {
-                loginError && <p className="loginError">{loginError}</p>
+                loginError && <p className="loginError"> {loginError} </p>
               }
 
             </div>
