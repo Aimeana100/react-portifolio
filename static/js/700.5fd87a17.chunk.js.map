@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/700.5fd87a17.chunk.js","mappings":"mJAQA,UANa,WACX,OACE,yBAAK,gBAET,C","sources":["pages/blog/Blog.jsx"],"sourcesContent":["import React from 'react'\n\nconst Blog = () => {\n  return (\n    <div> Sinlge Blog</div>\n  )\n}\n\nexport default Blog"],"names":[],"sourceRoot":""}

@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/473.771adeb2.chunk.js","mappings":"mJAYA,UAVc,WACZ,OACE,yBAAK,cAMT,C","sources":["pages/blogs/Blogs.jsx"],"sourcesContent":["import React from 'react'\n\nconst Blogs = () => {\n  return (\n    <div>\n\n        Blogs Page\n      \n    </div>\n  )\n}\n\nexport default Blogs\n"],"names":[],"sourceRoot":""}

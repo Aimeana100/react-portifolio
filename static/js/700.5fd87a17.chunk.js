@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact_portifolio=self.webpackChunkreact_portifolio||[]).push([[700],{700:function(e,i,r){r.r(i);r(791);var t=r(184);i.default=function(){return(0,t.jsx)("div",{children:" Sinlge Blog"})}}}]);
+//# sourceMappingURL=700.5fd87a17.chunk.js.map
