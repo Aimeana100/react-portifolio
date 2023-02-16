@@ -1,0 +1,124 @@
+
+/* Contact me */
+
+#contact__me {
+    padding: 50px 0px;
+  }
+  
+  .contact__me__container {
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .contact__me__container .form__container {
+    padding: 20px;
+    width: 40%;
+  }
+  
+  .contact__me__container .form__container input,
+  .contact__me__container .form__container textarea {
+    border: 0.01em solid #afafaf82;
+    margin: 10px 0px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.13);
+    color: var(--white);
+    outline: none;
+  }
+  
+  .form__container .send button {
+    background: linear-gradient(
+      105.75deg,
+      rgba(192, 112, 112, 1),
+      rgba(43, 250, 25, 0.7) 145.32%
+    );
+  
+    padding: 6px 25px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-style: normal;
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+  }
+  
+  .contact__me__container .address__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: auto;
+    grid-gap: 20px;
+    padding: 20px 10px;
+    flex-wrap: wrap;
+  }
+  
+  .contact__me__container .address__container .address__info {
+    /* padding: 10px;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(102, 110, 125, 1);
+    grid-row: span 1;
+    max-height: 200px;
+    margin: 10px;
+    padding: 15px 30px;
+    position: relative;
+  }
+  
+  .address__container .address__info img {
+    width: 40px;
+    position: absolute;
+    top: -10px;
+    left: -25px;
+  }
+  
+  .address__container .address__info p {
+    color: var(--white);
+    opacity: 0.6;
+    padding: 2px;
+  }
+  
+  .form__row {
+    position: relative;
+    /* background-color: darkcyan; */
+    /* margin: 2px; */
+  }
+  /* ========= Contact me form validaton ======= */
+  
+  .form__row .error,
+  .form__row i {
+    position: absolute;
+    color: rgb(208, 130, 112);
+    right: 10px;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+  
+  .has__block__label.form__row .error,
+  .has__block__label.form__row i {
+    position: absolute;
+    color: rgb(208, 130, 112);
+    right: 10px;
+    top: calc(10px + 50%);
+    transform: translate(0, -50%);
+  }
+  
+  .form__row i {
+    position: absolute;
+    color: rgb(208, 130, 112);
+    right: 10px;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+  
+  .form__error {
+    color: rgb(208, 130, 112);
+    margin: 5px 0px 20px 50px;
+  }
+  
+  .form__row i {
+    color: seagreen;
+  }
+  
+  
