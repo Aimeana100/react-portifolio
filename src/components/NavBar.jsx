@@ -28,6 +28,7 @@ const NavBar = () => {
             to: 'contact',
             name: 'Contact me',
         }
+        
     ]
     return (
         <div id="navbar" className='navbar'>

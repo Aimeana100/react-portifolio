@@ -1,0 +1,215 @@
+
+/* about  */
+
+#about__me {
+    padding: 50px 0px;
+  }
+  
+  .heading {
+    text-align: center;
+    margin: 20px auto;
+  }
+  
+  .heading h2 {
+    color: var(--green);
+    position: relative;
+    width: fit-content;
+    margin: auto;
+  }
+  
+  .heading h2::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: calc(100% + 2px);
+    background-color: #2bfa19;
+  }
+  
+  .heading h2::after {
+    content: "";
+    position: absolute;
+    top: calc(110%);
+    left: 50%;
+    transform: translate(-50%);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid var(--green);
+    /* margin: 2rem; */
+  }
+  
+  .aboutme_container {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    /* grid-auto-rows: minmax(200px, auto); */
+  }
+  
+  .photo {
+    grid-row: span 2;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  /* .photo img{
+    top: 1050px;
+    position: absolute;
+    top: -100px;
+  } */
+  
+  .profile__description {
+    grid-row: span 1;
+    display: flex;
+    align-items: center;
+    padding: 40px 0px;
+    padding-left: 60px;
+  }
+  .education__exprience {
+    grid-row: span 1;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  /*  about me education */
+  
+  .education__exprience .sub__heading {
+    text-align: center;
+    padding: 5px;
+    background: rgba(227, 249, 232, 0.75);
+    width: fit-content;
+    margin: 0px auto 20px auto;
+    font-size: 16px;
+  }
+  
+  .profile__description p {
+    color: var(--white);
+    max-width: 500px;
+    line-height: 1.2em;
+    font-size: 20px;
+    text-align: left;
+    opacity: 0.8;
+  }
+  
+  .education__exprience .education__container .item {
+    background-color: rgba(255, 255, 255, 0.04);
+    padding: 20px 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .education__exprience .education__container .item::before {
+    content: "";
+    position: absolute;
+    left: -17px;
+    top: 0px;
+    border-radius: 50%;
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: var(--green);
+  }
+  
+  .education__exprience .education__container .item::after {
+    content: "";
+    position: absolute;
+    left: -12px;
+    top: 10px;
+    display: block;
+    width: 1px;
+    height: calc(100% + 10px);
+    background-color: var(--green);
+  }
+  
+  .education__container .item h3.degree {
+    color: var(--white);
+    margin-bottom: 10px;
+    font-size: 24px;
+    border-bottom: 0.01em dashed var(--green);
+    width: fit-content;
+  }
+  
+  .education__container .item h3.certificate {
+    /* color: var(--white); */
+    font-size: 16px;
+    border: 1px solid linear-gradient(105.75deg, #c07070 -20.75%, #2bfa19 145.32%);
+    color: var(--green);
+    opacity: 0.5;
+  }
+  
+  .education__container .item h4.institution {
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 400;
+  }
+  
+  .education__container .item p.time__frame {
+    color: var(--white);
+    font-weight: 100;
+    font-size: 12px;
+    margin: 5px 0px;
+  }
+  
+  /*  about me exprinece */
+  
+  .education__exprience .exprience__container .item {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .education__exprience .exprience__container .item::before {
+    content: "";
+    position: absolute;
+    left: -17px;
+    top: 0px;
+    border-radius: 50%;
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: var(--red_color);
+  }
+  
+  .education__exprience .exprience__container .item::after {
+    content: "";
+    position: absolute;
+    left: -12px;
+    top: 10px;
+    display: block;
+    width: 1px;
+    height: calc(100% + 10px);
+    background-color: var(--red_color);
+  }
+  
+  .exprience__container .item h3.role {
+    color: var(--white);
+    margin-bottom: 10px;
+    font-size: 24px;
+    border-bottom: 0.01em dashed var(--red_color);
+    width: fit-content;
+  }
+  
+  .exprience__container .item h3.company {
+    /* color: var(--white); */
+    font-size: 16px;
+    color: var(--red_color);
+    opacity: 0.8;
+  }
+  
+  .exprience__container .item h4.work__mode {
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 400;
+  }
+  
+  .exprience__container .item p.time__frame {
+    color: var(--white);
+    font-weight: 100;
+    font-size: 12px;
+    margin: 5px 0px;
+  }
+  
