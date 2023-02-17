@@ -1,4 +1,5 @@
-import React from "react";
+import React, {useEffect,useState} from "react";
+import axios from 'axios';
 import { Link } from "react-router-dom";
 import "./blogs.scss";
 import Breadcumb from "../../components/Breadcumb";
@@ -6,78 +7,24 @@ import BlogCard from "../../components/BlogCard";
 
 const Blogs = () => {
 
-  const blogs = [
-    {
-      id: 1,
-      title: "title 1",
-      category: "category 1",
-      description: "description 1",
-      views: 10,
-      status: "unmuted",
-      comments: [
-        {
-          id: 1,
-          names: "name 1",
-          email: "hzdkv@example.com",
-          description: "description 1"
-        },
-        {
-          id: 2,
-          names: "name 2",
-          email: "hzdkv@example.com",
-          description: "description 2"
-        }
-      ]
-    },
-{
-  id: 2,
-  title: "title 2",
-  category: "category 2",
-  description: "description 2",
-  views: 20,
-  status: "unmuted",
-  comments: [
-    {
-      id: 1,
-      names: "name 1",
-      email: "hzdkv@example.com",
-      description: "description 1"
-    },
-    {
-      id: 2,
-      names: "name 2",
-      email: "hzdkv@example.com",
-      description: "description 2"
-    }
-  ]
 
-},
-{
-  id: 3,
-  title: "title 2",
-  category: "category 3",
-  description: "description 2",
-  views: 20,
-  status: "unmuted",
-  comments: [
-    {
-      id: 1,
-      names: "name 1",
-      email: "hzdkv@example.com",
-      description: "description 1"
-    },
-    {
-      id: 2,
-      names: "name 2",
-      email: "hzdkv@example.com",
-      description: "description 2"
-    }
-  ]
+ const baseUrl = 'https://indigo-barracuda-wig.cyclic.app';
 
-}
+  const [blogs, setBlogs] = useState([]);
 
-  ];
+
+  useEffect( () => {
+    axios.get(`${baseUrl}/api/blogs/all`)
+    .then((res) => {
+     setBlogs(res.data);
+    })
+    .catch((error) => {
+     console.log(error);
+    })
+  },[])
+
   return (
+    
     <main>
       <Breadcumb title="All Blogs" />
 
@@ -87,7 +34,7 @@ const Blogs = () => {
             <div className="blogs_container">
               {
                 blogs.map(blog => {
-                  return <BlogCard key={blog.id} blog={blog} />
+                  return <BlogCard key={blog._id} blog={blog} />
                 })
               }
 

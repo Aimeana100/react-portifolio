@@ -304,3 +304,148 @@
   font-size: 10px;
   display: flex;
 }
+
+
+
+/* Blog single */
+
+.blog__single {
+  padding: 30px 0px;
+}
+
+.blog__single .blog__single__container {
+  display: flex;
+  /* flex-wrap: wrap; */
+  gap: 20px;
+  justify-content: center;
+}
+
+.blog__single .blog__single__container .blog {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.blog__single .blog .blog__img {
+  /* max-height: 600px; */
+  /* max-width: 400px; */
+}
+
+.blog__single .blog__single__container .blog .blog__content_text p {
+  margin: 14px 0px;
+}
+
+.blog__single .blog .blog__img img {
+  width: 100%;
+}
+
+.blog__single .blog__single__container > *:nth-child(1) {
+  flex: 1 1 70%;
+  max-width: 700px;
+}
+.blog__single > *:nth-child(2) {
+  max-width: 320px;
+}
+
+.blog__content .date__published {
+  font-size: 14px;
+  color: rgba(175, 86, 86, 1);
+  margin: 5px 0px;
+  display: flex;
+}
+
+.blog__content .comments {
+  margin-top: 40px;
+}
+
+.comment__content .coment__item {
+  display: flex;
+  margin: 10px 0px;
+  background-color: rgba(196, 178, 178, 0.096);
+}
+
+.comment__content .commenter__photo {
+  border: 1px solid var(--bg_color);
+  padding: 5px;
+  border-radius: 50%;
+  margin: 5px;
+  background-color: var(--white);
+  width: 80px;
+  height: 55px;
+}
+
+.comment__content .commenter__photo img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.comments .coment__item .commenter__description p {
+  margin: 5px 0px;
+  font-size: 14px;
+}
+.comments .coment__item .commenter__description .name {
+  color: var(--red_color);
+  font-size: 14px;
+}
+
+.comments .coment__item .commenter__description .comment__date {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.comments .coment__item .commenter__description .reply a {
+  padding: 4px;
+  font-size: 13px;
+  background-color: #162d3d3f;
+  color: #000000;
+  font-weight: 700;
+  display: block;
+  margin: 5px 0px;
+  width: fit-content;
+}
+
+.comment__form {
+  margin-top: 30px;
+}
+.comment__form h3 {
+  margin: 5px 2px;
+}
+.comments form {
+  max-width: calc(100% - 10px);
+  background: #d1d1d15d;
+}
+
+.comments .form__group {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form__group .form__row {
+  flex: 1;
+}
+
+.comments .form__group input,
+.comments .form__row textarea {
+  margin: 5px;
+  padding: 8px 5px;
+  border-radius: 5px;
+  outline: none;
+  border: 0.01em solid #a3a3a3;
+  width: 95%;
+}
+
+.comments .form__row button {
+  padding: 5px 15px;
+  margin: 5px 0px 10px 5px;
+  color: #062b44;
+  font-weight: 700;
+  transition: 0.5s ease-in-out;
+  border-radius: 5px;
+}
+
+.comments .form__row button:hover {
+  background-color: #29465a5b;
+  cursor: pointer;
+  /* color: #ebebeb; */
+}
